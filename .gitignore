@@ -1,0 +1,13 @@
+
+demo/fast-downward/builds
+demo/VAL/build
+demo/Validate
+exercise-c/fast-downward/builds/
+exercise-c/fast-downward-solution/builds/
+exercise-d/fast-downward/builds/
+exercise-d/fast-downward-solution/builds/
+hands-on-1/fast-downward/builds/
+hands-on-2/fast-downward/builds/
+*.pyc
+*/__pycache_
+sas_plan
