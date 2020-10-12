@@ -12,7 +12,7 @@ class BDDSearch(object):
             self.fact_to_id[f] = 2*i
             self.fact_to_id[f + "PRIME"] = 2*i + 1
             # TODO switch the order above with the one below and
-            # evaluate the effect in exercise 3(b)
+            # evaluate the effect in exercise B.5(b)
 #            self.fact_to_id[f] = i
 #            self.fact_to_id[f + "PRIME"] = i + len(self.task.facts)
         self.id_to_fact = {i : f for f, i in self.fact_to_id.items()}
@@ -50,7 +50,7 @@ class BDDSearch(object):
 
     def create_transition_relation(self):
         t = zero()
-        # TODO add your code for exercise 3(a) here.
+        # TODO add your code for exercise B.5(a) here.
 
         # Note that the task is in STRIPS, so the formula for
         # the transition relation can be simplified to the conjunction
@@ -69,7 +69,7 @@ class BDDSearch(object):
     def apply_ops(self, reached):
         b = self.transition_relation
 
-        # TODO add your code for exercise 3(a) here.
+        # TODO add your code for exercise B.5(a) here.
 
         # Return a BDD that represents the set of states that can be
         # reached in one step from the states represented by the BDD
@@ -96,7 +96,7 @@ class BDDSearch(object):
         goal = self.conjunction_to_set(self.task.goals)
         reached = [bdd_state(self.state_to_ids(self.task.initial_state))]
 
-        # TODO add your code for exercise 3(a) here.
+        # TODO add your code for exercise B.5(a) here.
 
         # Create new BDDs with self.apply_ops(reached[i]) and append
         # them to the list "reached" in each step.
