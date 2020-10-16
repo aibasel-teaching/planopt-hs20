@@ -101,7 +101,8 @@ class SATSearch:
             self.add_clause([self.get_op_var(op, time_step, negated=False) for op in self.task.operators])
 
     def build_parallel_model(self):
-        # TODO add your code for exercise 4(b) here.
+        # TODO add your code for exercise B.4(b) here and remove the "pass" statement below.
+        pass
 
     def solve(self):
         result = minisat.solve(self.num_vars, self.clauses)
