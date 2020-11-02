@@ -38,8 +38,8 @@ bool RelaxedTaskGraph::is_goal_relaxed_reachable() {
     // Compute the most conservative valuation of the graph and use it to
     // return true iff the goal is reachable in the relaxed task.
 
-    graph.most_conservative_valuation();
-    return graph.get_node(goal_node_id).forced_true;
+    // TODO: add your code for exercise 2 (b) here.
+    return false;
 }
 
 int RelaxedTaskGraph::additive_cost_of_goal() {
