@@ -10,7 +10,7 @@ RelaxedTaskGraph::RelaxedTaskGraph(const TaskProxy &task_proxy)
     : relaxed_task(task_proxy),
       variable_node_ids(relaxed_task.propositions.size()) {
     /*
-      TODO: add your code for exercise 2 (b) here. Afterwards
+      TODO: add your code for exercise C.4 (b) here. Afterwards
         - variable_node_ids[i] should contain the node id of the variable node for variable i
         - initial_node_id should contain the node id of the initial node
         - goal_node_id should contain the node id of the goal node
@@ -38,7 +38,7 @@ bool RelaxedTaskGraph::is_goal_relaxed_reachable() {
     // Compute the most conservative valuation of the graph and use it to
     // return true iff the goal is reachable in the relaxed task.
 
-    // TODO: add your code for exercise 2 (b) here.
+    // TODO: add your code for exercise C.4 (b) here.
     return false;
 }
 
@@ -46,12 +46,12 @@ int RelaxedTaskGraph::additive_cost_of_goal() {
     // Compute the weighted most conservative valuation of the graph and use it
     // to return the h^add value of the goal node.
 
-    // TODO: add your code for exercise 2 (c) here.
+    // TODO: add your code for exercise C.4 (c) here.
     return -1;
 }
 
 int RelaxedTaskGraph::ff_cost_of_goal() {
-    // TODO: add your code for exercise 2 (e) here.
+    // TODO: add your code for exercise C.4 (e) here.
     return -1;
 }
 

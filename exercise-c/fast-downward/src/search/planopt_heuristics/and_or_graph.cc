@@ -70,7 +70,7 @@ void AndOrGraph::most_conservative_valuation() {
     }
 
     /*
-      TODO: add your code for exercise 2 (a) here. Ignore the members
+      TODO: add your code for exercise C.4 (a) here. Ignore the members
       direct_cost, additive_cost, and achiever for now.
     */
 }
