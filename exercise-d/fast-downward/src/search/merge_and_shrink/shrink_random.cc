@@ -28,7 +28,6 @@ StateEquivalenceRelation ShrinkRandom::compute_equivalence_relation(
     int num_states = ts.get_size();
     StateEquivalenceRelation equivalence_relation;
     utils::RandomNumberGenerator &local_rng = *rng;
-    // You can use local_rng(x) to generate a random number in [0..x)
 
     /*
       TODO: add your code for exercise 5(b) here.
@@ -41,6 +40,10 @@ StateEquivalenceRelation ShrinkRandom::compute_equivalence_relation(
       Each entry forward_list<int> of the vector is one class of states that
       will be abstracted to the same, new abstract state. You can use
       push_front on forward_list to insert states.
+
+      You can use local_rng(x) for some int x to generate a random
+      number in [0..x). See src/search/utils/rng.h for other methods of random
+      number generators. Of course, you can also use standard library solutions.
     */
 
     return equivalence_relation;
